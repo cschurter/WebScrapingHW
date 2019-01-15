@@ -1,0 +1,162 @@
+
+.header {
+    background-image: url('pia22465.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /*-webkit-filter: blur(1px);
+    filter: blur(1px)*/
+
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    /*background: rgba(244, 244, 244, 0.79);*/
+    /*background: #e6e6e6*/
+    background:  #dfbf9f;
+}
+
+.heading p {
+    font-size: larger
+}
+
+.row-margin {
+    position: relative;
+    top: 30px;
+    margin: auto;
+}
+
+.description {
+    padding: 2em;
+}
+
+#title {
+    color: #fff !important;
+}
+
+h3
+{
+    color: #fff;
+}
+
+.description h1 {
+    color: #290e0a;
+    font-size: 2.2rem;
+}
+
+.description h2 {
+    color: #290e0a;
+    line-height: 300%;
+}
+
+.description h5 {
+    color: #290e0a;
+}
+
+.description p {
+    color: #666;
+    font-size: 20px;
+    /*width: 50%;
+ line-height: 1.5;*/
+}
+
+.description button {
+    /*border:1px  solid #F97300;*/
+    border: 1px solid #290e0a;
+    /*background:#F97300;*/
+    background: #290e0a;
+    color: #fff;
+}
+
+.column-color {
+    background-color: #dfbf9f;
+    padding: 10px 5px 5px 25px;
+}
+
+/*Contact CSS*/
+
+.contact-form {
+    margin: 6em 0;
+    position: relative;
+}
+
+.contact-form h1 {
+    padding: 2em 1px;
+    color: #009999;
+}
+
+.contact-form .right {
+    max-width: 600px;
+}
+
+.contact-form .right .btn-secondary {
+    background: #009999;
+    color: #fff;
+    border: 0;
+}
+
+.contact-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
+}
+
+.column-heading {
+    color: #009999;
+}
+
+.table td:nth-child(5) {
+    text-align: left;
+}
+
+.midgrid {
+    background-color: #fff;
+}
+
+.table-h1 {
+    color: #009999;
+    line-height: 200%;
+}
+
+.small-p {
+    font-size: small;
+}
+
+.container-comparison {
+    background-color: #fff;
+}
+
+.comparison-h1 {
+    color: #009999;
+    line-height: 200%;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 1.9rem !important;
+    }
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2.2rem !important;
+    }
+}
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 2.4rem !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 2.6rem !important;
+    }
+}
