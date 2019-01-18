@@ -101,5 +101,29 @@ def scrape_image():
 
     return mars_image
 
+# Mars Hemisphere
+def scrape_hemisphere():
+    browser = init_browser()
+    hemisphere_url = 'https://www.nasa.gov/mission_pages/mars/images/index.html'
+    base_url = 'https://www.nasa.gov'
+    browser.visit(hemisphere_url)
+    html = browser.html
+    soup = BeautifulSoup(html, 'html.parser')
+    parent_div = soup.find('div', id = 'gallery-list')
+    items = parent_div.find_all('div', class_="ember-view")
+    images_dict = {}
+    images = []
+    for item in items:
+        img = item.find('img').get('src')
+        img_url = base_url + img
+        images.append(img_url)
+    #print(images)
+    images_dict['image0'] = images[0]
+    images_dict['image2'] = images[2]
+    images_dict['image0'] = images[3]
+    images_dict['image2'] = images[4]
+    images_dict['image0'] = images[5]
+    images_dict['image2'] = images[6]
+    return images_dict
 
 
