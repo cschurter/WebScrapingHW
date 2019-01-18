@@ -18,8 +18,7 @@ def index():
     weather = mongo.db.weather.find_one()
     image = mongo.db.image.find_one()
     facts = mongo.db.table.find_one()
-    hemisphere = mongo.db.hemisphere.find_one()
-    return render_template("index.html", news=news, weather=weather, facts=facts, image=image, hemisphere=hemisphere)
+    return render_template("index.html", news=news, weather=weather, facts=facts, image=image)
 
 # Route that will trigger the scrape function
 @app.route("/scrape")
@@ -40,10 +39,6 @@ def scraper():
     table = mongo.db.table
     table_data = scrape_mars.scrape_facts()
     table.update({}, table_data, upsert=True)
-
-    hemisphere = mongo.db.hemisphere
-    hemisphere_data = scrape_mars.scrape_hemisphere()
-    hemisphere.update({},hemisphere_data, upsert=True)
 
     return redirect("/", code=302)
 
